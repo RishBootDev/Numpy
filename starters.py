@@ -21,3 +21,13 @@ arr_bool = np.array([True, False, True], dtype=np.bool_)
 print(arr_bool)     # Output: [True False True]
 
 # Notice '_' in the syntax np.bool_
+
+
+# Use dtype=str to allow variable-length strings
+arr_exercise_str = np.array(['apple', 'banana', 'cherry'], dtype=str)
+print(arr_exercise_str)    # Output - ['apple' 'banana' 'cherry']
+
+
+# we can also create the array of objects in numpy
+arr_obj = np.array([1, 'a', 3.5], dtype=object)
+print(arr_obj)
