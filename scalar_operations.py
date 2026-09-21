@@ -1,3 +1,5 @@
+import numpy as np
+
 # scalar operations
 
 a = np.array([1, 2, 3])
