@@ -1,0 +1,25 @@
+import numpy as np
+
+# Creating a 3x3 RGB image
+image = np.array([
+    [[255, 0, 0], [0, 255, 0], [0, 0, 255]],  # Row 1: Red, Green, Blue
+    [[255, 255, 0], [0, 255, 255], [255, 0, 255]],  # Row 2: Yellow, Cyan, Magenta
+    [[192, 192, 192], [128, 128, 128], [0, 0, 0]]  # Row 3: Light Gray, Gray, Black
+])
+
+print("3x3 RGB Image Array:\n", image)
+
+# Accessing specific pixels
+red_pixel = image[0, 0]
+green_pixel = image[0, 1]
+blue_pixel = image[0, 2]
+
+print("Red pixel at (0, 0):", red_pixel)
+print("Green pixel at (0, 1):", green_pixel)
+print("Blue pixel at (0, 2):", blue_pixel)
+
+
+# now we can create the 2d array in numpy 
+arr = np.arange(12)         # Create a 1D array with values from 0 to 11
+arr_2d = arr.reshape(3, 4)
+print(arr_2d)
